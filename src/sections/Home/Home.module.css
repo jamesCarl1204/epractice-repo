@@ -1,0 +1,30 @@
+.section {
+  scroll-margin-top: 96px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .left {
+    grid-column: span 8;
+  }
+
+  .right {
+    grid-column: span 4;
+  }
+}

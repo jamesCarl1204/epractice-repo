@@ -1,0 +1,8 @@
+.main {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 112px 24px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 96px;
+}
